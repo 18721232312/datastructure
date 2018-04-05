@@ -8,6 +8,7 @@ import com.albk.datastructure.base.statck.ext.calc.OperatorEnum;
  * @author BK
  * @version V2.0
  * @description: 操作数栈
+ * 栈的经典应用就是计算机中对表达式的计算 ，这也是为什么在JVM内存结构中，为什么会有一个操作数栈
  * @team: ALBK
  * @date 2018/4/5 14:48
  */
