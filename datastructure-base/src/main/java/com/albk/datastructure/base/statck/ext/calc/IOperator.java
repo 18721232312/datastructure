@@ -11,6 +11,7 @@ public interface IOperator {
 
     /**
      * 运行
+     *
      * @param left
      * @param right
      * @return

@@ -7,9 +7,9 @@ package com.albk.datastructure.base.statck.ext.calc;
  * @team: ALBK
  * @date 2018/4/5 23:24
  */
-public class AddOperator implements  IOperator {
+public class AddOperator implements IOperator {
     @Override
     public double execute(double left, double right) {
-        return left + right ;
+        return left + right;
     }
 }

@@ -7,9 +7,9 @@ package com.albk.datastructure.base.statck;
  * @team: ALBK
  * @date 2018/4/3 0:05
  */
-public class StackFrame <T> {
+public class StackFrame<T> {
 
-    public T value ;
+    public T value;
 
     public StackFrame<T> next;
 

@@ -13,10 +13,10 @@ import com.albk.datastructure.base.statck.ext.calc.OperatorEnum;
 public class PostfixExpressionConvert {
 
     /**
-     *  将中缀表达式转成后缀表达式
+     * 将中缀表达式转成后缀表达式
      */
     public static String convert(String expression) {
-        if(expression==null || "".equals(expression)){
+        if (expression == null || "".equals(expression)) {
             return "";
         }
         StringBuilder res = new StringBuilder();

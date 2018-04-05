@@ -54,7 +54,7 @@ public class Stack<T> {
      * @return
      */
     public boolean isEmpty() {
-        return bottom == top ;
+        return bottom == top;
     }
 
     /**

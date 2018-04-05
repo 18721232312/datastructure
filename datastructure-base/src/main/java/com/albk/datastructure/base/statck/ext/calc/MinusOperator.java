@@ -3,7 +3,7 @@ package com.albk.datastructure.base.statck.ext.calc;
 /**
  * @author BK
  * @version V2.0
- * @description:  减法
+ * @description: 减法
  * @team: ALBK
  * @date 2018/4/5 23:24
  */

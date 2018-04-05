@@ -12,17 +12,18 @@ public class Calculator {
     private IOperator operator;
 
     public Calculator(OperatorEnum operatorEnum) {
-        if (operatorEnum==OperatorEnum.add){
+        if (operatorEnum == OperatorEnum.add) {
             operator = new AddOperator();
-        }else if (operatorEnum==OperatorEnum.minus){
+        } else if (operatorEnum == OperatorEnum.minus) {
             operator = new MinusOperator();
-        }else if (operatorEnum==OperatorEnum.multiply){
+        } else if (operatorEnum == OperatorEnum.multiply) {
             operator = new MultiplyOperator();
-        }else if (operatorEnum==OperatorEnum.divide){
+        } else if (operatorEnum == OperatorEnum.divide) {
             operator = new DivOperator();
         }
     }
-    public double calc(double left , double right ){
-        return operator.execute(left , right );
+
+    public double calc(double left, double right) {
+        return operator.execute(left, right);
     }
 }

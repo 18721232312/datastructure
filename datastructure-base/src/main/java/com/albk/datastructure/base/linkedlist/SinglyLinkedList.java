@@ -3,8 +3,7 @@ package com.albk.datastructure.base.linkedlist;
 /**
  * @author BK
  * @version V2.0
- * @description:
- * 双向链表在定位添加和删除时，可以先判断 位置 ，是处于左边还是右边
+ * @description: 双向链表在定位添加和删除时，可以先判断 位置 ，是处于左边还是右边
  * 如果处于左边则从头遍历。如果处于右边 ，则从属于开始遍历
  * 这是androidJDK， 谷歌 开发工程师的优化，与JDK sun工程师实现 不一样的地方
  * 查找
