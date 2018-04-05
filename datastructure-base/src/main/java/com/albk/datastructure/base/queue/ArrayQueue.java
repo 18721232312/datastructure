@@ -4,6 +4,8 @@ package com.albk.datastructure.base.queue;
  * @author BK
  * @version V2.0
  * @description: 静态队列，环形数组  tail = (tail +  1 ) % length
+ * 线程 不安全
+ * 扩展点： 尝试 实现线程安全，阻塞队列
  * @team: ALBK
  * @date 2018/4/3 23:14
  */

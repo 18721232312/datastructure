@@ -21,7 +21,10 @@ public class Stack<T> {
      */
     private StackFrame top;
 
-    private Stack() {
+    public Stack() {
+        bottom = new StackFrame();
+        top = new StackFrame();
+        top = bottom;
     }
 
     /**
@@ -31,13 +34,8 @@ public class Stack<T> {
      */
     public void push(T value) {
         StackFrame sf = new StackFrame(value);
-        if (bottom == null) {
-            bottom = sf;
-            top = bottom;
-        } else {
-            sf.next = top;
-            top = sf;
-        }
+        sf.next = top;
+        top = sf;
         size++;
     }
 
@@ -56,15 +54,27 @@ public class Stack<T> {
      * @return
      */
     public boolean isEmpty() {
-        return bottom == top;
+        return bottom == top ;
     }
 
     /**
      * 清空栈
      */
     public void clear() {
-        top = null;
-        bottom = top;
+        top = bottom;
+    }
+
+    /**
+     * 取出栈顶的值 ，但是从从栈中移除
+     *
+     * @return
+     */
+    public T peek() {
+        if (!isEmpty()) {
+            T value = (T) top.value;
+            return value;
+        }
+        return null;
     }
 
     /**
@@ -91,12 +101,11 @@ public class Stack<T> {
             System.out.println(sf.value);
             sf = sf.next;
         }
-        System.out.println(sf.value);
     }
 
     public static void main(String[] args) {
         Stack stack = new Stack();
-        for (int i = 1; i <= 20; i++) {
+        for (int i = 1; i <= 2; i++) {
             stack.push(i);
         }
         System.out.println("stack size " + stack.size());
@@ -114,7 +123,15 @@ public class Stack<T> {
         System.out.println("pop:" + stack.pop());
         System.out.println("大小" + stack.size);
         stack.clear();
+        stack.traversal();
         System.out.println("+++++++++++++++++++++++++++++++++");
+
+        stack.push(200);
+        stack.push(201);
+        stack.push(202);
+
+        stack.pop();
+        stack.pop();
         stack.traversal();
     }
 }
