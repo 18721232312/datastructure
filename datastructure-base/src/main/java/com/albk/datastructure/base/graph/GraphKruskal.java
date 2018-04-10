@@ -1,4 +1,4 @@
-package com.albk.datastructure.base.grapha;
+package com.albk.datastructure.base.graph;
 
 import java.util.ArrayList;
 import java.util.Arrays;
