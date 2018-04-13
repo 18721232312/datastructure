@@ -5,10 +5,9 @@ import java.util.*;
 /**
  * @author BK
  * @version V2.0
- * @description: 普里姆算法
- * 先构造邻接矩阵
+ * @description: 图的基本操作和遍历
  * @team: ALBK
- * @date 2018/4/11 0:04
+ * @date 2018/4/14 0:04
  */
 public class Graph {
     /**
