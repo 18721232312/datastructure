@@ -49,6 +49,10 @@ public class Graph {
         return matrix;
     }
 
+    public static int getMaxWeight() {
+        return MAX_WEIGHT;
+    }
+
     /**
      * 获取某顶点的出度
      *
@@ -243,7 +247,7 @@ public class Graph {
         System.out.println(">>>>>>>>>>>>>>>>>>>");
     }
 
-    private static Graph buildGraph() {
+    public static Graph buildGraph() {
         Graph graph = new Graph(9);
         int[] a1 = new int[]{0, 10, MAX_WEIGHT, MAX_WEIGHT, MAX_WEIGHT, 11, MAX_WEIGHT, MAX_WEIGHT, MAX_WEIGHT};
         int[] a2 = new int[]{10, 0, 18, MAX_WEIGHT, MAX_WEIGHT, MAX_WEIGHT, 16, MAX_WEIGHT, 12};
