@@ -3,7 +3,7 @@ package com.albk.datastructure.base.graph;
 /**
  * @author BK
  * @version V2.0
- * @description: 迪杰斯特拉
+ * @description: 迪杰斯特拉 求最短路径
  * 此算法与普里姆算法高度相似 ，唯一不同的地主是， 在最终结果的数据组中，存放的内容不一样，
  * 理解这两点特别重要，算法唯一的区别就是，在找下一个节点时候的核心逻辑有些差异
  * 普里姆算法存放的最小权值，
@@ -13,6 +13,7 @@ package com.albk.datastructure.base.graph;
  */
 public class GraphDijstra {
     /**
+     * 求最短路径
      * 迪杰斯特拉算法思路：
      * 第一步：构造最短路径的数组，默认值为第一个顶点的数据
      * 第二步：在当前最小成本数组中，找出当前所有节点 ，连接成本最小的顶点信息
@@ -21,11 +22,13 @@ public class GraphDijstra {
      * 第四步：重复第二步，再找出由当前顶点可到达的顶点中，成本路径的顶点
      * 第五步：重复第三步
      * 直到所有的顶点都 遍历完成，
+     * @param graph 需要求解的图
+     * @param v  需要求最短路径的顶点
      */
-    public void getShortPath(Graph graph) {
+    public void getShortPath(Graph graph, int v) {
 
         //对应节点的最小路径 下标是顶点，值是最小路径
-        int[] sortPath = graph.getMatrix()[0];
+        int[] sortPath = graph.getMatrix()[v];
         //是否已经找到
         boolean[] hasFind = new boolean[graph.getVertexSize()];
         for (int i = 0; i < graph.getVertexSize(); i++) {
@@ -46,13 +49,13 @@ public class GraphDijstra {
             }
         }
         for (int i = 0; i < sortPath.length; i++) {
-            System.out.println("顶点0到 " + i + "的最短路径是:" + sortPath[i]);
+            System.out.println("顶点" + v + "到 " + i + "的最短路径是:" + sortPath[i]);
         }
     }
 
     public static void main(String[] args) {
         GraphDijstra dijstra = new GraphDijstra();
         Graph graph = Graph.buildGraph();
-        dijstra.getShortPath(graph);
+        dijstra.getShortPath(graph, 5);
     }
 }
