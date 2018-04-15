@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <setting name="logImpl" value="LOG4J2"/>
+        <setting name="useGeneratedKeys" value="true" />
+    </settings>
+    <plugins>
+        <plugin interceptor="com.xxxxx.framework.dao.interceptor.TenantInterceptor" >
+            <property name="skipTables" value="sys_dict,sys_role,sys_role_permission,sys_tenant_permission,sys_tenant_type,sys_permission,sys_apply_info,sys_login_log,sys_login_error,sys_publish_log,sys_tenant" />
+            <property name="skipParameters" value="tenantCode,tenantID" />
+            <property name="skipSqlIds" value="com.xxxxx.system.permission.RefreshDataDAO*,
+            com.xxxxx.mizar.chain.member.dao.ScoreExchangeDepartmentDAO.insertList,
+            com.xxxxx.mizar.chain.stock.dao.StockInventoryDocItemDAO.insertList"/>
+        </plugin>
+        <plugin interceptor="com.xxxxx.sharding.plugin.PaginationInterceptor">
+            <property name="limit" value="1000"/>
+        </plugin>
+        <plugin interceptor="com.xxxxx.framework.dao.permission.PermissionPlugin"/>
+    </plugins>
+</configuration>
