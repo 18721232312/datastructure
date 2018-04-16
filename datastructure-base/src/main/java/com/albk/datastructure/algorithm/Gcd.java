@@ -3,7 +3,7 @@ package com.albk.datastructure.algorithm;
 /**
  * @author BK
  * @version V2.0
- * @description: 求最大公约数
+ * @description: 求最大公约数   欧几里德算法
  *  (m>n) m和n 的最大公约数 = n和m%n的最大公约数
  *  36 ，24 -> 24 ,12-> 12 , 0   n=0  return 12
  *
