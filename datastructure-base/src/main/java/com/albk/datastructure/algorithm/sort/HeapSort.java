@@ -1,4 +1,4 @@
-package com.albk.datastructure.sort;
+package com.albk.datastructure.algorithm.sort;
 
 /**
  * @author BK
