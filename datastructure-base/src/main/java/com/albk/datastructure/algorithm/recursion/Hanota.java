@@ -1,4 +1,4 @@
-package com.albk.datastructure.algorithm;
+package com.albk.datastructure.algorithm.recursion;
 
 /**
  * @author BK
