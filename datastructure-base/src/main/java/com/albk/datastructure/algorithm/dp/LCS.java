@@ -15,7 +15,7 @@ public class LCS {
      * i==j  = 0 :  dp[i][j]=0
      * i==j and <>0  dp[j][j] = dp[i-1][j-1]+1
      * i<>j  dp[i][j] =  Maxth.max ( dp[i-1][j] , dp [i][j-1])
-     *
+     * 复杂度N^2
      * @param left
      * @param right
      * @return
