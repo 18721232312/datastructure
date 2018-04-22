@@ -17,7 +17,7 @@ public class BigNumberMulti {
 
         int l1 = s1Array.length;
         int l2 = s2Array.length;
-
+        //两个数相乘的结果，在两个数长度之和+3保证可以存放得下
         int[] result = new int[l1 + l2 + 3];
         //保存各位相乘的结果
         for (int i = 0; i < l1; i++) {
