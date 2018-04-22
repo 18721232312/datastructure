@@ -257,28 +257,28 @@ public class Tree {
         System.out.println("tree size is : " + tree.getTreeSize(root));
 
         List<String> res = new ArrayList<>();
-//        tree.preOrder(root, res );
-//        System.out.println("preOrder result is : "+res);
-//
-//        res = new ArrayList<>();
-//        tree.inOrder(root, res );
-//        System.out.println("inOrder result is : "+res);
-//
-//        res = new ArrayList<>();
-//        tree.postOrder(root, res );
-//        System.out.println("postOrder result is : "+res);
-//
-//        res = new ArrayList<>();
-//        tree.stackPreOrder(root, res );
-//        System.out.println("stack result is : "+res);
-//
-//        res = new ArrayList<>();
-//        tree.bfs(root ,res);
-//        System.out.println("bfs order is : "+res);
+        tree.preOrder(root, res );
+        System.out.println("preOrder result is : "+res);
+
+        res = new ArrayList<>();
+        tree.inOrder(root, res );
+        System.out.println("inOrder result is : "+res);
+
+        res = new ArrayList<>();
+        tree.postOrder(root, res );
+        System.out.println("postOrder result is : "+res);
+
+        res = new ArrayList<>();
+        tree.stackPreOrder(root, res );
+        System.out.println("stack result is : "+res);
+
+        res = new ArrayList<>();
+        tree.bfs(root ,res);
+        System.out.println("bfs order is : "+res);
 
         res = new ArrayList<>();
         tree.levelOrder(root);
-        System.out.println("bfs order is : " + res);
+        System.out.println("lever order is : " + res);
 
     }
 }
