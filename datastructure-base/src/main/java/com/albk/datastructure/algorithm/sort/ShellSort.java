@@ -26,6 +26,7 @@ public class ShellSort {
             h = h * 3 + 1;
         }
         for (int g = h; g > 0; g--) {//间隔每次缩小1
+            //内层插入排序
             for (int i = 0; i < arr.length / g; i++) { //控制插入排序的外层循环次数
                 for (int j = i; j <= arr.length; j += g) { //每次增加步长
                     //插入排序比较
