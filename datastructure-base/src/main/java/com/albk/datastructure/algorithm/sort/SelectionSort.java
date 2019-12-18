@@ -35,7 +35,7 @@ public class SelectionSort {
             swap(arr, i, minPos);
             swap(arr, arr.length - 1 - i, maxPos);
         }
-        print(arr);
+        ArrayUtils.print(arr);
 
     }
 
@@ -53,14 +53,10 @@ public class SelectionSort {
             swap(arr, i, minPos);
         }
 
-        print(arr);
+        ArrayUtils.print(arr);
     }
 
-    private static void print(int[] arr) {
-        for (int f : arr) {
-            System.out.println(f);
-        }
-    }
+
 
     private static void swap(int[] arr, int i, int minPos) {
         int temp = arr[i];

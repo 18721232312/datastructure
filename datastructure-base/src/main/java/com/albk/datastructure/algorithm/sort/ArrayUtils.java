@@ -20,4 +20,10 @@ public class ArrayUtils {
         array[i] = array[j];
         array[j] = temp;
     }
+
+    public static void print(int[] arr) {
+        for (int f : arr) {
+            System.out.println(f);
+        }
+    }
 }
