@@ -8,5 +8,8 @@
     <artifactId>datastructure</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>datastructure-base</module>
+    </modules>
 
 </project>
