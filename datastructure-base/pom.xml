@@ -11,5 +11,7 @@
 
     <artifactId>datastructure-base</artifactId>
 
+    <dependencies>
+    </dependencies>
 
 </project>
